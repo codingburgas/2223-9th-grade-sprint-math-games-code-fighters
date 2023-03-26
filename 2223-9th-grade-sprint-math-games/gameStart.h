@@ -18,7 +18,7 @@ int startGame()
 	}
 	if (num == 1)
 	{
-		std::cout << "Choose a number between 1 and 3 to choose which game you want to play";
+		std::cout << "Choose a number between 1 and 3 to choose which game you want to play\n";
 		std::cin >> num;
 		chooseGame(num);
 	}
@@ -33,17 +33,14 @@ void chooseGame(int num)
 {
 	if (num == 1)
 	{
-		playGameOne();
-		//std::cout << "Call gameOne.h -> main function!";
+		playGameOne();//Calls the main function called playGameOne from gameOne header file
 	}
 	else if (num == 2)
 	{
-		playGameTwo();
-		//std::cout << "Call gameTwo.h -> main function!";
+		playGameTwo();//Calls the main function called playGameTwo from gameTwo header file
 	}
 	else if (num == 3)
 	{
-		playGameThree();
-		//std::cout << "Call gameThree.h -> main function!";
+		playGameThree();//Calls the main function called playGameThree from gameThree header file
 	}
 }
